@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Channels Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="page-header">
+      <div class="header-text">
+        <h1>Создание и настройки каналов</h1>
+        <p>Что бы подключить новый канал, нажмите добавить канал</p>
+      </div>
+      <button class="btn btn-primary" id="addChannelBtn">
+        + Добавить канал
+      </button>
+    </header>
+
+    <div class="table-wrapper">
+      <table class="channels-table">
+        <thead>
+          <tr>
+            <th class="col-name">Название канала</th>
+            <th class="col-funnel">Воронка</th>
+            <th class="col-status">Статус</th>
+          </tr>
+        </thead>
+        <tbody id="channelTableBody">
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="qrModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2>Канал №150511</h2>
+          <label class="toggle-switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="modal-status">
+          Статус: отсканируйте QR
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="qr-wrapper">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TelegramChannelLink" alt="QR Code" class="qr-image">
+        </div>
+        <div class="instructions">
+          <ol>
+            <li>Откройте Telegram</li>
+            <li>Выберите связанные устройства</li>
+            <li>Выберите добавить новое устройство</li>
+            <li>Наведите камеру на QR-код</li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button class="btn btn-text" id="closeModalBtn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
