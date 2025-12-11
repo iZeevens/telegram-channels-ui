@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 640px;
   margin: 40px auto;
   padding: 20px;
   border: 1px solid #e0e0e0;
@@ -68,23 +68,18 @@ body {
   color: #333;
 }
 
-.table-wrapper {
-  overflow-x: auto;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-}
-
 .channels-table {
   width: 100%;
   border-collapse: collapse;
   min-width: 600px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .channels-table th, 
 .channels-table td {
   padding: 16px 20px;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
 }
 
 .channels-table th {
@@ -93,17 +88,14 @@ body {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center; 
 }
+
 
 .channels-table tr:last-child td {
   border-bottom: none;
 }
-
-.col-name { text-align: left !important; width: 40%; }
-.col-funnel { text-align: left !important; width: 30%; }
-.col-status { text-align: left !important; width: 30%; }
 
 .avatar-wrapper {
   display: flex;
@@ -154,7 +146,6 @@ body {
 .modal-content {
   background-color: #fff;
   width: 100%;
-  max-width: 500px;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -274,13 +265,10 @@ input:checked + .slider:before { transform: translateX(16px); }
 
   .channels-table tr {
     margin-bottom: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
     background: #fff;
   }
   
   .channels-table td {
-    border-bottom: 1px solid #f0f0f0;
     padding: 12px 15px;
     text-align: right;
     display: flex;
